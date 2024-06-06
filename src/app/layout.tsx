@@ -1,6 +1,25 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
+
+import "@fontsource/bungee-shade";  /*  Defaults to weight 400 */
+import "@fontsource/bungee-shade/400.css"; /* Specify weight */
+/* @import "@fontsource/bungee-shade/400-italic.css"; Specify weight and style */
+/* font-family: "Bungee Shade"; */
+
+import "@fontsource/rampart-one"; /* Defaults to weight 400 */
+import "@fontsource/rampart-one/400.css"; /* Specify weight */
+/* font-family: "Rampart One"; */
+
+
+import "@fontsource/poppins"; 
+import "@fontsource/poppins/400.css";
+import { ToastContainer } from "react-toastify";
+/* font-family: "Poppins"; */
+
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <ToastContainer />
+      </body>
     </html>
   );
 }
