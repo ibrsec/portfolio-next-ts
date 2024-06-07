@@ -14,7 +14,7 @@ const ProjectsLayout = ({children}:{children:React.ReactNode}) => {
 
 
   return (
-    <div className="pt-[150px] md:pt-[130px]">
+    <div className="pt-[150px] pb-[150px] md:pt-[130px]">
         <Provider store={storeRef.current}>
           
         <ProjectsNavs /> 

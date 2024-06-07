@@ -4,15 +4,22 @@ import { FaGithub } from "react-icons/fa";
 
 const ContactPage = () => {
   return (
-    <section className="mt-[120px]">
-      <form>
-        <h5>Send Message</h5>
-        <input
+    <section className="mt-[130px]  ">
+      <form
+        action="https://formspree.io/f/mzbnlqby"
+        method="POST"
+        className=" text-center w-11/12 md:w-3/5 sm:w-4/5 mx-auto my-4"
+      >
+        {/* text-align: center;
+  width: 60%; 
+  margin: 1rem auto; */}
+        <h5>Send me a Message</h5>
+        {/* <input
           type="text"
           name="username"
           id="username"
           placeholder="Username"
-        />
+        /> */}
         <input type="email" name="email" id="email" placeholder="Email" />
         <textarea
           name="message"

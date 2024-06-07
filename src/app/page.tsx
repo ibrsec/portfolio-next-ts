@@ -63,9 +63,7 @@ export default function Home() {
           {/*  */}
           
         </div>
-        <a href="#" className="top-btn">
-          Top <span>▵</span>
-        </a>
+        
       </>
     </div>
   );

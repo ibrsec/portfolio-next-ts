@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 
 const useProject = () => {
   const dispatch = useDispatch();
+  //seckinit mail
   const url = "https://66619da963e6a0189feabf2c.mockapi.io/projects";
 
   const getProjects = async () => {
