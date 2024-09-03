@@ -16,7 +16,9 @@ const ProjectsNavs = () => {
         <div className="flex items-center justify-center border-b-2 mb-2">
             <Link className={allProjectsActiveClass + " project-nav-links"} href="/projects" >All</Link>
             <Link className={htmlProjectsActiveClass + " project-nav-links"} href="/projects/htmlcss" >HTML</Link>
+            <Link className={reactProjectsActiveClass + " project-nav-links"} href="/projects/fullstack" >Full-Stack</Link>
             <Link className={reactProjectsActiveClass + " project-nav-links"} href="/projects/react" >React.js</Link>
+            <Link className={reactProjectsActiveClass + " project-nav-links"} href="/projects/express" >Express.js</Link>
             <Link className={nextProjectsActiveClass + " project-nav-links"} href="/projects/nextjs" >Next.js</Link>
             <Link className={typescriptProjectsActiveClass + " project-nav-links"} href="/projects/typescript" >TypeScript</Link>
         </div>
