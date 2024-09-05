@@ -9,12 +9,12 @@ import { useDispatch } from "react-redux";
 const useProject = () => {
   const dispatch = useDispatch();
   //seckinit mail
-  const url = "https://66619da963e6a0189feabf2c.mockapi.io/projects";
+  const url = "https://portfolio-backend-ochre-phi.vercel.app/api/projects";
 
   const getProjects = async () => {
     try {
       dispatch(fetchStart());
-      const response = await fetch(url,{ cache: 'force-cache' });
+      const response = await fetch(url,{ cache: 'no-store' });
       console.log(response);
       const responsebody = await response.json();
       console.log(responsebody);

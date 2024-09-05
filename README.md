@@ -97,7 +97,6 @@
 
 <b>🛠 State Management & UI Enhancements:</b> Employed React and Redux Toolkit for state management and React Toastify for real-time notifications, enhancing interactivity and user feedback.</br>
 
-<b>🔍 Mock API Data:</b> Used mock API data to dynamically render content, simulating a real-world environment and enhancing the portfolio's realism and functionality.</br>
 
 <b>🌐 Optimized Deployment:</b> Prepared for scalable deployment, ensuring high performance and availability for a global audience.</br> 
 <!-- 🌱 ÷Screen and search the Legends on the app</br> -->
