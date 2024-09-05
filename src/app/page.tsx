@@ -27,7 +27,7 @@ export default function Home() {
                   Welcome to my Portfolio page👋🏻
                 </h2>
                 <h4 className="text-[2rem] md:text-5xl font-semibold text-[#64fa91] my-4 tracking-wide">
-                  I'm a Frontend Developer!
+                  I'm a Fullstack Developer!
                 </h4>
                 <a href="/pdf/resume.pdf" download="ibrahim-seckin-resume">
                 <ButtonComp text="Dowload Resume"/></a>
