@@ -14,7 +14,7 @@ const useProject = () => {
   const getProjects = async () => {
     try {
       dispatch(fetchStart());
-      const response = await fetch(url,{ cache: 'no-store' });
+      const response = await fetch(url,{ cache: 'force-cache' });
       console.log(response);
       const responsebody = await response.json();
       console.log(responsebody);
