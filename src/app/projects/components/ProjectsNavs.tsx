@@ -15,7 +15,7 @@ const ProjectsNavs = () => {
 
   return (
     <div className="flex items-center justify-center">
-        <div className="flex items-center justify-center border-b-2 mb-2">
+        <div className="flex items-center justify-center flex-wrap border-b-2 mb-2">
             <Link className={allProjectsActiveClass + " project-nav-links"} href="/projects" >All</Link>
             <Link className={htmlProjectsActiveClass + " project-nav-links"} href="/projects/htmlcss" >HTML</Link>
             <Link className={fullstackActiveClass + " project-nav-links"} href="/projects/fullstack" >Full-Stack</Link>

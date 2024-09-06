@@ -1,17 +1,11 @@
 "use client";
 
 import { useAppSelector } from "@/lib/hooks";
-import useProject from "@/lib/useProject";
-import { useEffect } from "react";
+
 import ProjectCardWrapper from "../components/ProjectCardWrapper";
 import ProjectCard from "../components/ProjectCard";
 
 const ExpressPage = () => {
-  const { getProjects } = useProject();
-
-  useEffect(() => {
-    getProjects();
-  }, []);
 
   const projects = useAppSelector((state) => state.projects.projects);
 

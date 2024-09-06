@@ -11,10 +11,10 @@ const ProjectCard:React.FC<IProps> = ({item}) => {
             
           > 
 
-            <Image
-              src={item?.projectGif} fill={true}
+            <img
+              src={item?.projectGif}  
               alt={item?.projectName}
-              className="absolute inset-0 h-full w-full object-cover" 
+              className="absolute inset-0 h-full w-full object-contain" 
               />
               
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40" />

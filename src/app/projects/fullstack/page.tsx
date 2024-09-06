@@ -1,17 +1,10 @@
 "use client";
 
-import { useAppSelector } from "@/lib/hooks";
-import useProject from "@/lib/useProject";
-import { useEffect } from "react";
+import { useAppSelector } from "@/lib/hooks"; 
 import ProjectCardWrapper from "../components/ProjectCardWrapper";
 import ProjectCard from "../components/ProjectCard";
 
-const FullStackPage = () => {
-  const { getProjects } = useProject();
-
-  useEffect(() => {
-    getProjects();
-  }, []);
+const FullStackPage = () => { 
 
   const projects = useAppSelector((state) => state.projects.projects);
 
