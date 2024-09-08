@@ -14,7 +14,7 @@ const ProjectCard:React.FC<IProps> = ({item}) => {
             <Image
               src={item?.projectGif}  
               alt={item?.projectName}
-              className="absolute inset-0 h-full w-full object-contain" 
+              className="absolute inset-0 h-full w-full object-top object-contain" 
               />
               
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 flex flex-col items-start justify-start" />
