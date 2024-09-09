@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 type IProps = {
     item:IProject;
@@ -25,7 +26,7 @@ const ProjectCard:React.FC<IProps> = ({item}) => {
               <div className="z-10 gap-y-1 justify-start flex-wrap text-sm leading-6 text-gray-300 flex items-center gap-3 mt-3 ">
                 {
                   item?.category?.map(category=>(
-                    <span className=" transition-all text-md font-[600] text-purple-500 hover:text-white  bg-slate-700 px-4 py-1 rounded-md capitalize"  > {category}</span>
+                    <Link  href={"/projects/"+category} ><span className=" transition-all text-md font-[600] text-purple-500 hover:text-white  bg-slate-700 px-4 py-1 rounded-md capitalize"  > {category}</span></Link>
                   ))
                 }
                 
@@ -45,3 +46,24 @@ const ProjectCard:React.FC<IProps> = ({item}) => {
 }
 
 export default ProjectCard
+
+
+/*
+            <Link className={allProjectsActiveClass + " project-nav-links"} href="/projects" >All</Link>
+            <Link className={htmlProjectsActiveClass + " project-nav-links"} href="/projects/html" >HTML</Link>
+            <Link className={fullstackActiveClass + " project-nav-links"} href="/projects/fullstack" >Full-Stack</Link>
+            <Link className={reactProjectsActiveClass + " project-nav-links"} href="/projects/react" >React.js</Link>
+            <Link className={expressProjectsActiveClass + " project-nav-links"} href="/projects/express" >Express.js</Link>
+            <Link className={nextProjectsActiveClass + " project-nav-links"} href="/projects/next" >Next.js</Link>
+            <Link className={typescriptProjectsActiveClass + " project-nav-links"} href="/projects/typescript" >TypeScript</Link>
+            <Link className={jwtProjectsActiveClass + " project-nav-links"} href="/projects/jwt" >Jwt</Link>
+            <Link className={mongodbProjectsActiveClass + " project-nav-links"} href="/projects/mongodb" >MongoDB</Link>
+            <Link className={postgresqlProjectsActiveClass + " project-nav-links"} href="/projects/postgresql" >PostgreSQL</Link>
+            <Link className={reduxProjectsActiveClass + " project-nav-links"} href="/projects/redux" >Redux</Link>
+            <Link className={contextProjectsActiveClass + " project-nav-links"} href="/projects/context" >Context</Link>
+            <Link className={tailwindProjectsActiveClass + " project-nav-links"} href="/projects/tailwind" >Tailwind</Link>
+            <Link className={materialProjectsActiveClass + " project-nav-links"} href="/projects/material" >Material</Link>
+            <Link className={bootstrapProjectsActiveClass + " project-nav-links"} href="/projects/bootstrap" >Bootstrap</Link>
+            <Link className={SassProjectsActiveClass + " project-nav-links"} href="/projects/sass" >Sass</Link>
+
+             */

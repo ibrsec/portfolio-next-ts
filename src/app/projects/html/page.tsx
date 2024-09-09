@@ -1,32 +1,30 @@
 "use client";
 
-import { useAppSelector } from "@/lib/hooks";
-
+import { useAppSelector } from "@/lib/hooks"; 
 import ProjectCardWrapper from "../components/ProjectCardWrapper";
 import ProjectCard from "../components/ProjectCard";
 
-const ExpressPage = () => {
-  
+const HtmlCssPage = () => { 
 
   const projects = useAppSelector((state) => state.projects.projects);
 
-  const expressProjects = projects?.filter(item => item?.category?.includes("express"))
+  const htmlProjects = projects?.filter(item => item?.category?.includes("html"))
 
   console.log("projects= ", projects);
-  console.log("expressProjects=", expressProjects);
+  console.log("htmlProjects=", htmlProjects);
   return (
 
     <ProjectCardWrapper>
-      {expressProjects?.map((item) => (
+      {htmlProjects?.map((item) => (
         <ProjectCard key={item?.id} item={item} />
       ))}
     </ProjectCardWrapper>
   );
 };
 
-export default ExpressPage;
+export default HtmlCssPage;
 
-// const projects = [
+// const a = [
 //   {
 //     id: 1,
 //     projectName: "Todo Nowie",
