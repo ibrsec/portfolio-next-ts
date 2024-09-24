@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <>
-        <div className="">
+        <div className=""> 
           
           <main className="font-bold my-[120px] container mx-auto px-5  ">
             <div className="desc-container flex flex-col md:flex-row items-center gap-1 ">
